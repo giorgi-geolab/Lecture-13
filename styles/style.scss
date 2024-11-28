@@ -2,41 +2,45 @@
 @import "variables";
 @import "mixins";
 
-div {
-  margin: 50px auto;
-  width: 300px;
+.main {
+    margin: 50px auto;
+    width: 300px;
 
-  h1 {
-    color: $color-light-green;
-    font-size: $font-size-large;
-    margin-bottom: 50px;
-  }
-}
+    h1 {
+        color: $color-light-green;
+        font-size: $font-size-large;
+        margin-bottom: 50px;
+    }
 
-.cont {
-  width: 300px;
-  height: 80px;
-  background-color: $color-dark-green;
-  @include center();
-
-  p {
-    color: white;
-    display: inline;
-  }
+    .cont {
+        width: 300px;
+        height: 80px;
+        background-color: $color-dark-green;
+        @include center();
+        
+        p {
+            color: white;
+            display: inline;
+        }
+    }
 }
 
 h3 {
-  font-size: $font-size-large;
+    color: $font-size-medium;
 }
 
 .parent {
-  width: 300px;
-  height: 200px;
-  margin: 0 auto;
-  border: 2px solid black;
-  @include center();
+    width: 300px;
+    height: 200px;
+    margin: 50px auto;
+    border: 2px solid black;
+    @include center();
 }
 
 .card {
-  @include card(200px, 340px, blue);
+    @include card(230px, 340px, $color-dark-green, white, 15px);
+}
+
+.profile {
+    @include card(400px, 200px, gold, black, 5px);
 }
